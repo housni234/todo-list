@@ -46,9 +46,12 @@ function App() {
 
   return (
     <>
+      <h1 className='title'>To-Do App</h1>
       <TodoForm onSubmit={addTodo} />
-      <h1 className='header'>Todo list</h1>
-      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
+      <div className='wrapper'>
+        <h2 className='header'><u>To do list</u></h2>
+        <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
+      </div>
     </>
   );
 }
