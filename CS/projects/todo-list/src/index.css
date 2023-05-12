@@ -19,16 +19,24 @@ body {
 
 }
 
+.todo-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.btn-delete {
+  margin-right: 60px;
+}
+
 .list {
   display: flex;
   flex-direction: column;
-  /* align-content: flex-start; */
   list-style-type: none;
 
 }
 
 .new-item-form,
-/* .todo-list, */
 .header {
   display: flex;
   justify-content: center;
@@ -41,10 +49,11 @@ body {
   font-family: monospace;
 }
 
-.btn-delete {
-  /* display: flex;
-  flex-direction: row; */
-}
+/* .btn-delete {
+  display: flex;
+  
+  justify-self: end;
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
